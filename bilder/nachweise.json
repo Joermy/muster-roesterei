@@ -1,0 +1,348 @@
+{
+ "lizenz": {
+  "quelle": "Unsplash",
+  "name": "Unsplash-Lizenz",
+  "url": "https://unsplash.com/license",
+  "hinweis": "Kostenfrei nutzbar, auch gewerblich, ohne Genehmigung und ohne Pflicht zur Namensnennung. Die Nennung erfolgt hier freiwillig. Nicht erlaubt: Weiterverkauf unveraenderter Kopien, Aufbau eines konkurrierenden Bilddienstes."
+ },
+ "bilder": {
+  "hero-roester": {
+   "autor": "Yanapi Senaud",
+   "profil": "https://unsplash.com/@yaanapi",
+   "quelle": "https://unsplash.com/photos/6HR8vpjYUHo",
+   "alt": "Gruene Kaffeebohnen werden in den Roester gefuellt",
+   "breiten": [
+    1000,
+    1600,
+    2200
+   ],
+   "breite": 2200,
+   "hoehe": 1238,
+   "verhaeltnis": "16:9",
+   "farbe": "#65564b"
+  },
+  "roester-glut": {
+   "autor": "Zoshua Colah",
+   "profil": "https://unsplash.com/@zoshuacolah",
+   "quelle": "https://unsplash.com/photos/GWPLtRdsaHo",
+   "alt": "Bohnen in der Trommel waehrend der Roestung",
+   "breiten": [
+    560,
+    1120
+   ],
+   "breite": 1120,
+   "hoehe": 1400,
+   "verhaeltnis": "4:5",
+   "farbe": "#5a4736"
+  },
+  "roester-detail": {
+   "autor": "Volodymyr Proskurovskyi",
+   "profil": "https://unsplash.com/@proskurovskiy",
+   "quelle": "https://unsplash.com/photos/P2X_zf9o094",
+   "alt": "Nahaufnahme der Roestmaschine",
+   "breiten": [
+    660,
+    1320
+   ],
+   "breite": 1320,
+   "hoehe": 880,
+   "verhaeltnis": "3:2",
+   "farbe": "#54493a"
+  },
+  "roester-abkuehlen": {
+   "autor": "Tim Mossholder",
+   "profil": "https://unsplash.com/@timmossholder",
+   "quelle": "https://unsplash.com/photos/YC6RVdoTtIk",
+   "alt": "Frisch geroestete Bohnen werden im Kuehlsieb gewendet",
+   "breiten": [
+    660,
+    1320
+   ],
+   "breite": 1320,
+   "hoehe": 880,
+   "verhaeltnis": "3:2",
+   "farbe": "#574a39"
+  },
+  "weg-1-kirsche": {
+   "autor": "Faris Ristiansyah",
+   "profil": "https://unsplash.com/@farisr___",
+   "quelle": "https://unsplash.com/photos/gV4A5979K_k",
+   "alt": "Reife Kaffeekirschen werden von Hand gepflueckt",
+   "breiten": [
+    520,
+    1040
+   ],
+   "breite": 1040,
+   "hoehe": 1300,
+   "verhaeltnis": "4:5",
+   "farbe": "#5a553b"
+  },
+  "weg-2-gruen": {
+   "autor": "The Manh",
+   "profil": "https://unsplash.com/@themanh401",
+   "quelle": "https://unsplash.com/photos/-IHLVvT7YcY",
+   "alt": "Gruene Kaffeekirschen am Zweig",
+   "breiten": [
+    520,
+    1040
+   ],
+   "breite": 1040,
+   "hoehe": 1300,
+   "verhaeltnis": "4:5",
+   "farbe": "#4f6c2b"
+  },
+  "weg-3-sack": {
+   "autor": "Jacques Dillies",
+   "profil": "https://unsplash.com/@jacques_dillies",
+   "quelle": "https://unsplash.com/photos/QvxtKYg0rZo",
+   "alt": "Rohkaffee wird aus dem Sack geschoepft",
+   "breiten": [
+    520,
+    1040
+   ],
+   "breite": 1040,
+   "hoehe": 1300,
+   "verhaeltnis": "4:5",
+   "farbe": "#4e4943"
+  },
+  "weg-4-trommel": {
+   "autor": "Battlecreek Coffee Roasters",
+   "profil": "https://unsplash.com/@battlecreekcoffeeroasters",
+   "quelle": "https://unsplash.com/photos/mY4hAwxNA_0",
+   "alt": "Bohnen kurz nach der Roestung",
+   "breiten": [
+    520,
+    1040
+   ],
+   "breite": 1040,
+   "hoehe": 1300,
+   "verhaeltnis": "4:5",
+   "farbe": "#5a5142"
+  },
+  "weg-5-muehle": {
+   "autor": "Battlecreek Coffee Roasters",
+   "profil": "https://unsplash.com/@battlecreekcoffeeroasters",
+   "quelle": "https://unsplash.com/photos/SOIG_X1zEK8",
+   "alt": "Gemahlener Kaffee in der Muehle",
+   "breiten": [
+    520,
+    1040
+   ],
+   "breite": 1040,
+   "hoehe": 1300,
+   "verhaeltnis": "4:5",
+   "farbe": "#715e4b"
+  },
+  "weg-6-tasse": {
+   "autor": "Mohamed Shaffaf",
+   "profil": "https://unsplash.com/@shaffuscanvas",
+   "quelle": "https://unsplash.com/photos/RZJRWMnd0DM",
+   "alt": "Espresso laeuft aus dem Siebtraeger in die Tasse",
+   "breiten": [
+    520,
+    1040
+   ],
+   "breite": 1040,
+   "hoehe": 1300,
+   "verhaeltnis": "4:5",
+   "farbe": "#766856"
+  },
+  "sorte-1": {
+   "autor": "Beau Carpenter",
+   "profil": "https://unsplash.com/@btcarpenter",
+   "quelle": "https://unsplash.com/photos/hvkssBsGv2I",
+   "alt": "Kaffeetuete auf einem Holztisch",
+   "breiten": [
+    420,
+    840
+   ],
+   "breite": 840,
+   "hoehe": 840,
+   "verhaeltnis": "1:1",
+   "farbe": "#7e5b34"
+  },
+  "sorte-2": {
+   "autor": "Mona Jain",
+   "profil": "https://unsplash.com/@monajain",
+   "quelle": "https://unsplash.com/photos/R6pUma9B5O4",
+   "alt": "Kaffeetuete auf einem Haufen Bohnen",
+   "breiten": [
+    420,
+    840
+   ],
+   "breite": 840,
+   "hoehe": 840,
+   "verhaeltnis": "1:1",
+   "farbe": "#59695d"
+  },
+  "sorte-3": {
+   "autor": "Manki Kim",
+   "profil": "https://unsplash.com/@kimdonkey",
+   "quelle": "https://unsplash.com/photos/mv7kxYh5Rko",
+   "alt": "Papiertuete mit gemischten Bohnen",
+   "breiten": [
+    420,
+    840
+   ],
+   "breite": 840,
+   "hoehe": 840,
+   "verhaeltnis": "1:1",
+   "farbe": "#97958c"
+  },
+  "sorte-4": {
+   "autor": "With Mahdy",
+   "profil": "https://unsplash.com/@withmahdy",
+   "quelle": "https://unsplash.com/photos/wizWrRZJXSg",
+   "alt": "Papiertuete mit ganzen Bohnen auf hellem Tisch",
+   "breiten": [
+    420,
+    840
+   ],
+   "breite": 840,
+   "hoehe": 840,
+   "verhaeltnis": "1:1",
+   "farbe": "#e0c9aa"
+  },
+  "cafe-raum": {
+   "autor": "White.Rainforest ™︎ ∙ 易雨白林.",
+   "profil": "https://unsplash.com/@whiterainforest",
+   "quelle": "https://unsplash.com/photos/CVVbynP7DQ4",
+   "alt": "Gastraum mit Holztischen und Baenken",
+   "breiten": [
+    1000,
+    1600,
+    2200
+   ],
+   "breite": 2200,
+   "hoehe": 1238,
+   "verhaeltnis": "16:9",
+   "farbe": "#8a735d"
+  },
+  "cafe-lampen": {
+   "autor": "Sára Sedlmajerová",
+   "profil": "https://unsplash.com/@sari211",
+   "quelle": "https://unsplash.com/photos/yjE0w4YRYCI",
+   "alt": "Gastraum mit Tischen und Stuehlen am Fenster",
+   "breiten": [
+    660,
+    1320
+   ],
+   "breite": 1320,
+   "hoehe": 880,
+   "verhaeltnis": "3:2",
+   "farbe": "#7b776c"
+  },
+  "cafe-stuehle": {
+   "autor": "Khaleb Lacaba",
+   "profil": "https://unsplash.com/@klebrivera",
+   "quelle": "https://unsplash.com/photos/u-ZiDossskU",
+   "alt": "Sitzecke mit Holzmoebeln und gerahmten Bildern",
+   "breiten": [
+    660,
+    1320
+   ],
+   "breite": 1320,
+   "hoehe": 880,
+   "verhaeltnis": "3:2",
+   "farbe": "#4f483e"
+  },
+  "bar-espresso": {
+   "autor": "🇸🇮 Janko Ferlič",
+   "profil": "https://unsplash.com/@itfeelslikefilm",
+   "quelle": "https://unsplash.com/photos/AHbdsPZ9t4c",
+   "alt": "Espressomaschine beim Bezug",
+   "breiten": [
+    560,
+    1120
+   ],
+   "breite": 1120,
+   "hoehe": 1400,
+   "verhaeltnis": "4:5",
+   "farbe": "#4f525c"
+  },
+  "bar-barista": {
+   "autor": "Zoshua Colah",
+   "profil": "https://unsplash.com/@zoshuacolah",
+   "quelle": "https://unsplash.com/photos/Ayi5y4HMdFw",
+   "alt": "Barista an der Espressomaschine",
+   "breiten": [
+    660,
+    1320
+   ],
+   "breite": 1320,
+   "hoehe": 880,
+   "verhaeltnis": "3:2",
+   "farbe": "#c7a795"
+  },
+  "verkostung-loeffel": {
+   "autor": "René Porter",
+   "profil": "https://unsplash.com/@reneporter",
+   "quelle": "https://unsplash.com/photos/5j6YBI45TI4",
+   "alt": "Cupping-Loeffel in der Hand",
+   "breiten": [
+    660,
+    1320
+   ],
+   "breite": 1320,
+   "hoehe": 880,
+   "verhaeltnis": "3:2",
+   "farbe": "#6c6964"
+  },
+  "verkostung-tassen": {
+   "autor": "René Porter",
+   "profil": "https://unsplash.com/@reneporter",
+   "quelle": "https://unsplash.com/photos/aKWmuOqWAwI",
+   "alt": "Weisse Tassen fuer die Verkostung auf dem Tisch",
+   "breiten": [
+    660,
+    1320
+   ],
+   "breite": 1320,
+   "hoehe": 880,
+   "verhaeltnis": "3:2",
+   "farbe": "#766c63"
+  },
+  "verkostung-aufguss": {
+   "autor": "René Porter",
+   "profil": "https://unsplash.com/@reneporter",
+   "quelle": "https://unsplash.com/photos/VXIOMNlnSos",
+   "alt": "Heisses Wasser wird in die Verkostungstassen gegossen",
+   "breiten": [
+    560,
+    1120
+   ],
+   "breite": 1120,
+   "hoehe": 1400,
+   "verhaeltnis": "4:5",
+   "farbe": "#72665a"
+  },
+  "bohnen-makro": {
+   "autor": "Gregory Hayes",
+   "profil": "https://unsplash.com/@gregoryallen",
+   "quelle": "https://unsplash.com/photos/Jmc0PORTQ-A",
+   "alt": "Kaffeebohnen in Nahaufnahme",
+   "breiten": [
+    660,
+    1320
+   ],
+   "breite": 1320,
+   "hoehe": 880,
+   "verhaeltnis": "3:2",
+   "farbe": "#5e6363"
+  },
+  "bohnen-schale": {
+   "autor": "Jakub Kapusnak",
+   "profil": "https://unsplash.com/@foodiesfeed",
+   "quelle": "https://unsplash.com/photos/1LaCrYx5J7I",
+   "alt": "Geroestete Bohnen in einer offenen Hand",
+   "breiten": [
+    660,
+    1320
+   ],
+   "breite": 1320,
+   "hoehe": 880,
+   "verhaeltnis": "3:2",
+   "farbe": "#4f4740"
+  }
+ }
+}

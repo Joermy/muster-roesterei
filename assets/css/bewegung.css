@@ -1,0 +1,152 @@
+.zeile {
+  display: block;
+  overflow: hidden;
+}
+
+html.js-bewegung .zeile__inner {
+  display: block;
+  transform: translate3d(0, 105%, 0);
+  transition: transform 1s var(--kurve);
+}
+
+html.js-bewegung .zeile.ist-sichtbar .zeile__inner {
+  transform: none;
+}
+
+html.js-bewegung .zeile__inner {
+  transition-delay: var(--verzug, 0ms);
+}
+
+html.js-bewegung .einblenden {
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+  transition: opacity 0.9s var(--kurve), transform 0.9s var(--kurve);
+}
+
+html.js-bewegung .einblenden.ist-sichtbar {
+  opacity: 1;
+  transform: none;
+}
+
+html.js-bewegung .freilegen > * {
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path 1.2s var(--kurve);
+  transition-delay: inherit;
+}
+
+html.js-bewegung .freilegen.ist-sichtbar > * {
+  clip-path: inset(0 0 0 0);
+}
+
+html.js-bewegung .freilegen img {
+  transform: scale(1.08);
+  transition: transform 1.4s var(--kurve);
+}
+
+html.js-bewegung .freilegen.ist-sichtbar img {
+  transform: none;
+}
+
+html.js-bewegung .einblenden.ist-fertig {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+html.js-bewegung .freilegen.ist-fertig > * {
+  clip-path: inset(0 0 0 0) !important;
+  transition: none !important;
+}
+
+html.js-bewegung .freilegen.ist-fertig img {
+  transform: none !important;
+  transition: none !important;
+}
+
+html.js-bewegung .zeile.ist-fertig .zeile__inner {
+  transform: none !important;
+  transition: none !important;
+}
+
+.profil {
+  position: relative;
+}
+
+.profil__bild {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.profil__kurve {
+  fill: none;
+  stroke: url(#glut-verlauf);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-dasharray: 100;
+  stroke-dashoffset: calc(100 - var(--gezeichnet, 0));
+}
+
+.profil__raster {
+  stroke: rgba(244, 236, 228, 0.12);
+  stroke-width: 0.5;
+}
+
+.profil__marke {
+  fill: var(--muted);
+  font-family: var(--schrift);
+  font-size: 3px;
+  letter-spacing: 0.1em;
+}
+
+.profil__punkt {
+  fill: var(--glut-2);
+  opacity: calc(var(--gezeichnet, 0) / 100);
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root) {
+  animation: seite-weg 0.25s ease both;
+}
+
+::view-transition-new(root) {
+  animation: seite-her 0.45s var(--kurve) both;
+}
+
+@keyframes seite-weg {
+  to { opacity: 0; }
+}
+
+@keyframes seite-her {
+  from { opacity: 0; transform: translateY(12px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.js-bewegung .einblenden,
+  html.js-bewegung .freilegen,
+  html.js-bewegung .freilegen > *,
+  html.js-bewegung .freilegen img,
+  html.js-bewegung .zeile__inner {
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+    transition: none !important;
+  }
+
+  .strecke { height: auto; }
+  .strecke__buehne { position: static; height: auto; }
+
+  .laufband__spur { animation: none; }
+  .laufband { mask-image: none; -webkit-mask-image: none; }
+
+  .profil__kurve { stroke-dashoffset: 0; }
+  .profil__punkt { opacity: 1; }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
+}

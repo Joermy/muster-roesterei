@@ -1,0 +1,396 @@
+.knopf {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: 15px 30px;
+  border: 0;
+  border-radius: 2px;
+  background: var(--glut);
+  color: #1a0d04;
+  font: inherit;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.knopf::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--glut-2);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.45s var(--kurve);
+}
+
+.knopf:hover::before,
+.knopf:focus-visible::before {
+  transform: scaleX(1);
+}
+
+.knopf svg {
+  transition: transform 0.45s var(--kurve);
+}
+
+.knopf:hover svg,
+.knopf:focus-visible svg {
+  transform: translateX(4px);
+}
+
+.knopf--leer {
+  background: transparent;
+  color: var(--text);
+  box-shadow: inset 0 0 0 1px var(--rand);
+}
+
+.knopf--leer::before {
+  background: rgba(244, 236, 228, 0.08);
+}
+
+.knopf--leer:hover,
+.knopf--leer:focus-visible {
+  color: var(--text);
+}
+
+.textlink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-weight: 600;
+  text-decoration: none;
+  background: var(--glut);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.textlink svg {
+  color: var(--glut-1);
+  transition: transform 0.4s var(--kurve);
+}
+
+.textlink:hover svg,
+.textlink:focus-visible svg {
+  transform: translateX(4px);
+}
+
+.sorte {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: var(--sp-5);
+  border-radius: 3px;
+  background: var(--bg-2);
+  box-shadow: inset 0 0 0 1px var(--rand);
+  overflow: hidden;
+  transition: background-color 0.5s var(--kurve);
+}
+
+.sorte::after {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: -30%;
+  width: 70%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--ton, var(--glut-1)) 0%, transparent 70%);
+  opacity: 0.16;
+  pointer-events: none;
+  transition: opacity 0.6s var(--kurve), transform 0.6s var(--kurve);
+}
+
+.sorte:hover::after,
+.sorte:focus-within::after {
+  opacity: 0.32;
+  transform: scale(1.15);
+}
+
+.sorte__kopf {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  margin-bottom: var(--sp-4);
+}
+
+.sorte__herkunft {
+  font-family: var(--schrift);
+  font-size: var(--fs-meta);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.sorte h3 {
+  margin-bottom: var(--sp-3);
+}
+
+.sorte__noten {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-top: var(--sp-5);
+}
+
+.sorte__note {
+  padding: 3px 11px;
+  border-radius: 999px;
+  box-shadow: inset 0 0 0 1px var(--rand);
+  font-size: var(--fs-meta);
+  color: var(--muted);
+}
+
+.sorte__skala {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  margin-top: var(--sp-5);
+  padding-top: var(--sp-4);
+  border-top: 1px solid var(--rand);
+  font-size: var(--fs-meta);
+  color: var(--muted);
+}
+
+.sorte__punkte {
+  display: flex;
+  gap: 5px;
+}
+
+.sorte__punkt {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px var(--rand);
+}
+
+.sorte__punkt.ist-voll {
+  background: var(--glut);
+  box-shadow: none;
+}
+
+.kennzahlen {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--sp-7);
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .kennzahlen { grid-template-columns: minmax(0, 1fr); gap: var(--sp-5); }
+}
+
+.kennzahl {
+  padding-top: var(--sp-4);
+  border-top: 1px solid var(--rand);
+}
+
+.kennzahl dt {
+  font-size: var(--fs-meta);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: var(--sp-3);
+}
+
+.kennzahl dd {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(2.5rem, 1.4rem + 3.4vw, 4.5rem);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.kennzahl dd span {
+  font-family: var(--schrift);
+  font-size: 0.3em;
+  font-weight: 600;
+  color: var(--muted);
+  margin-left: 0.3em;
+}
+
+.laufband {
+  display: flex;
+  gap: var(--sp-7);
+  overflow: hidden;
+  padding-block: var(--sp-5);
+  border-block: 1px solid var(--rand);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  user-select: none;
+}
+
+.laufband__spur {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: var(--sp-7);
+  padding-right: var(--sp-7);
+  animation: laufband 42s linear infinite;
+}
+
+.laufband:hover .laufband__spur {
+  animation-play-state: paused;
+}
+
+.laufband__stueck {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  flex: none;
+  font-family: var(--display);
+  font-size: clamp(1.5rem, 1rem + 1.6vw, 2.5rem);
+  line-height: 1;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.laufband__stueck i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--glut-1);
+  font-style: normal;
+  flex: none;
+}
+
+@keyframes laufband {
+  to { transform: translate3d(-100%, 0, 0); }
+}
+
+.klapp {
+  border-top: 1px solid var(--rand);
+}
+
+.klapp:last-of-type {
+  border-bottom: 1px solid var(--rand);
+}
+
+.klapp__knopf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  width: 100%;
+  padding: var(--sp-5) 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font-family: var(--display);
+  font-size: var(--fs-h3);
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.3s var(--kurve);
+}
+
+.klapp__knopf:hover {
+  color: var(--glut-2);
+}
+
+.klapp__zeichen {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  position: relative;
+}
+
+.klapp__zeichen::before,
+.klapp__zeichen::after {
+  content: "";
+  position: absolute;
+  inset: 50% 0 auto 0;
+  height: 1.5px;
+  background: currentColor;
+  transition: transform 0.4s var(--kurve);
+}
+
+.klapp__zeichen::after {
+  transform: rotate(90deg);
+}
+
+.klapp__knopf[aria-expanded="true"] .klapp__zeichen::after {
+  transform: rotate(0deg);
+}
+
+.klapp__inhalt {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.45s var(--kurve);
+}
+
+.klapp__inhalt > div {
+  padding-bottom: var(--sp-5);
+  color: var(--muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .klapp__inhalt { transition: none; }
+}
+
+.zitat {
+  max-width: 28ch;
+  font-family: var(--display);
+  font-size: var(--fs-h2);
+  line-height: 1.1;
+}
+
+.zitat footer {
+  margin-top: var(--sp-5);
+  font-family: var(--schrift);
+  font-size: var(--fs-meta);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.zeiten {
+  margin: 0;
+}
+
+.zeiten div {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--sp-5);
+  padding-block: var(--sp-3);
+  border-bottom: 1px solid var(--rand);
+}
+
+.zeiten dt {
+  color: var(--muted);
+}
+
+.zeiten dd {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.kontaktliste dt {
+  font-size: var(--fs-meta);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: var(--sp-2);
+}
+
+.kontaktliste dd {
+  margin: 0 0 var(--sp-6);
+  font-family: var(--display);
+  font-size: var(--fs-h3);
+}
+
+.kontaktliste a {
+  text-decoration-color: var(--rand);
+}
+
+.kontaktliste a:hover {
+  text-decoration-color: var(--glut-1);
+}
